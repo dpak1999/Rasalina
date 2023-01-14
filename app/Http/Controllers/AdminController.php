@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
+    // logout
     public function destroy(Request $request)
     {
         Auth::guard("web")->logout();
